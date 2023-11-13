@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+h1 {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    border-radius: 5px;
+}
+
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style the "Add Product" button */
+button[type="submit"] {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0054aa;
+}
+
+/* Style the product list container */
+table {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+/* Style table captions */
+table caption {
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+    background-color: #0073e6;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Style table rows */
+table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style table cells */
+table td {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Style delete and edit buttons */
+button {
+    background-color: #e53935;
+    color: white;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c62828;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+    table {
+        margin-top: 10px;
+    }
+}

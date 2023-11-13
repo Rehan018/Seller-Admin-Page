@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title>Seller Admin Page</title>
+</head>
+<body>
+    <h1>Seller Admin Page</h1>
+    <form id="productForm">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" required>
+        <label for="productPrice">Price:</label>
+        <input type="number" id="productPrice" required>
+        <label for="productCategory">Category:</label>
+        <select id="productCategory" required>
+            <option value="electronics">Electronics</option>
+            <option value="entertainment">Entertenment</option>
+            <option value="education">Education</option>
+            <option value="grocery">Grocery</option>
+            <option value="software">Software</option>
+        </select>
+        <button type="submit">Add Product</button>
+    </form>
+    <table id="electronicsTable">
+        <caption>Electronics</caption>
+        <tbody></tbody>
+    </table>
+    
+    <table id="entertainmentTable">
+        <caption>Entertainment</caption>
+        <tbody></tbody>
+    </table>
+    
+    <table id="educationTable">
+        <caption>Education</caption>
+        <tbody></tbody>
+    </table>
+    
+    <table id="groceryTable">
+        <caption>Grocery</caption>
+        <tbody></tbody>
+    </table>
+    
+    <table id="softwareTable">
+        <caption>Software</caption>
+        <tbody></tbody>
+    </table>
+
+    <!-- <div id="productList"></div> -->
+    <script src="script.js"></script>
+</body>
+</html>
